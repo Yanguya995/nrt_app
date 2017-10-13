@@ -1,0 +1,54 @@
+ 
+ @-webkit-keyframes msize {
+     0%{-webkit-transform: translateX(-100px);
+        -webkit-transition: left 10% 5s;        
+    };
+     50%{-webkit-transform:translateX(-200px);
+        -webkit-transition: left 50% 5s;
+    };
+     100%{-webkit-transform:translateX(-300px);
+        -webkit-transition: left 100% 5s;
+    };     
+ }
+
+ @keyframes msize {
+    0%{transform: translateX(-300px);
+        transition: left 10% 5s;        
+    };
+     50%{transform:translateX(-400px);
+        transition: left 50% 5s;
+    };
+     100%{transform:translateX(-500px);
+        transition: left 100% 5s;
+    };
+}
+
+.colorInput {
+    width:40%; 
+    font-size:350%; 
+    height:300px;
+    position:absolute; 
+    text-align: center;
+    color: gray;
+    top:25%; left:30%;
+    border-radius: 200px;
+    border:solid blue 1px;
+    -webkit-transition: width 3s;
+    transition: width 3s;
+    animation-name: msize;
+    animation-duration: 3s;
+ }
+
+ .colorInputBeforeClick {
+    width:18%; 
+    font-size:150%; 
+    height:300px; 
+    position:absolute; 
+    top:25%; left:40%;
+    border-radius: 200px;
+    border:solid blue 1px;
+ }
+
+ body{
+     background-color: grey;
+ }
