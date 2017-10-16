@@ -62,71 +62,47 @@
 </body>
 
 </html>-->
+
 <html>
-
-<head>
-    <title> FunOnWeb </title>
-    <link rel="shortcut icon" href="http://localhost/favicon.ico" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    <head>
+        <title> FunOnWeb </title>
+        <link rel="shortcut icon" href="http://localhost/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-
-    <script>
-        var count = 0;
-        var timer = 100;
-        var cArray = ['H', 'i', ' ', 'm', 'y', ' ', '', '', '', 'n', 'a', 'm', 'e', ' ', 'i', 's', ' ', 'N', 'j', 'a',
-            'b', 'u',
-            'l', 'o', ' ', 'R', 'i', 'c', 'h', 'a', 'r', 'd', ' ', 'T', 'h', 'w', 'a', 'l', 'a',
-            ' ', 'a', 'n', 'd', ' ', 't', 'h', 'i', 's', ' ', 'i', 's', ' ', 'f', 'u', 'n', ' ', 'o', 'n', ' ',
-            'w', 'e', 'b', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
-            ' '
-        ];
-        var string = '';
-
-        function funk() {
-            setInterval(function () {
-                if (count < cArray.length) {
-                    string += cArray[count];
-                    document.getElementById('intro_text').innerHTML = string;
-                    count++;
-
-                } else {
-                    window.location.href = './bubbles.html';
-                }
-            }, timer)
-        }
-    </script>
-</head>
-
-<body onload="funk()" id="bd_main" style="width: 98%; height:98%">
-    <div class="backGroundDiv">
-    </div>
-    <div style="position:absolute; width:90%;">
-        <div class="logoDiv">
-            <img class="imgV" width="148px" src="./1.jpg" />
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+       
+    </head>
+    
+    <body id="bd_main" style="width: 98%; height:98%">
+        <div class="backGroundDiv">
         </div>
-        <div class="horizontalLineDiv"></div>
-    </div>
-    <div class="verticalLineDiv"></div>
-    <div style="height:50%; display:inline-block; left:25%; position:absolute; font-size:250%; text-align:center;color:white; top:30%; width:58%">
-        <h1> Fun on Web</h1>
-        <h5 id="intro_text" style="margin-top: 7%"> Hi my name is Njabulo Richard Thwala and this is Fun on Web </h5>
-        <img width="100px" src="./i.png" />
-        <div>
-
+        <div style="position:absolute; width:90%;">
+            <div class="logoDiv">
+                <img class="imgV" width="148px" src="./1.jpg" />
+            </div>
+            <div class="horizontalLineDiv"></div>
         </div>
-    </div>
-    <div>
-        <span style="font-size:250%; text-align:center;color:white; 
-        background-color:darkgrey; position: absolute; top:95%;
-        left:160px; height:5%; width:91.4%">
-                <a href="mailto:njabulo.thwala@gmail.com"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" style="margin-left: 30px"><i class="fa fa-linkedin"></i></a>
-                <a href="https://stackoverflow.com/users/6486347/yanguya995" style="margin-left: 30px"><i class="fa fa-stack-overflow"></i></a>
-                </span>
-    </div>
-</body>
-
-</html>
+            <div class="verticalLineDiv"></div>        
+            <div class="mainCanvasDiv">                
+                <canvas id="cnv_main" width="1856px;" height="1010px" class="mainCanvas">
+                </canvas>             
+            </div>
+            <div>
+            <input type="text" id="txt_color" class="colorInputBeforeClick" placeholder="Enter your favourite colour">
+            </div>
+            <div>
+                <span style="font-size:250%; text-align:center;color:white; 
+                background-color:darkgrey; position: absolute; top:95%;
+                left:160px; height:5%; width:91.4%">
+                        <a href="mailto:njabulo.thwala@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" style="margin-left: 30px"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://stackoverflow.com/users/6486347/yanguya995" style="margin-left: 30px"><i class="fa fa-stack-overflow"></i></a>
+                        </span>
+            </div>
+        </body>
+    
+    </html>
+    

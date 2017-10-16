@@ -1,9 +1,14 @@
 $(document).ready(function () {
 
+    var myArray = ['Hi', ' ', 'My name is Njabulo Thwala'];
+    var count = 0
+    var string = '';
+
+
+
     var circles = [];
     var wCircles = [];
-    var c = document.getElementById("cnv_main")
-    var ctx = c.getContext("2d");
+   
     var defaultColor = 'blue';
     var timer = 10;
     var selectedColor = '';
@@ -434,31 +439,37 @@ $(document).ready(function () {
             "code": "9ACD32"
         }
     ]
+    $(window).on('load', (() => {
+        alert('This is main');
+    }));
+    $('#cnv_main').on('load', main());
 
-    $('#txt_color').on('input', function (e) {
-        input = $(this).val();
-        isColor(input);
-        $(this).attr('style', 'background-color:' + selectedColor + '; opacity: 0.3');
-    });
+    function main() {
+        $('#txt_color').on('input', function (e) {
+            input = $(this).val();
+            isColor(input);
+            $(this).attr('style', 'background-color:' + selectedColor + '; opacity: 0.3');
+        });
 
-    $("#txt_color").on('click', function () {
-        $(this).attr("class", "colorInput")
-    });
+        $("#txt_color").on('click', function () {
+            $(this).attr("class", "colorInput")
+        });
 
-    move();
-    setInterval(function () {
-        var bl_circle
-        if (selectedColor != '') {
-            bl_circle = createCircle(selectedColor);
-        } else {
-            bl_circle = createCircle(defaultColor);
-        }
+        move();
+        setInterval(function () {
+            var bl_circle
+            if (selectedColor != '') {
+                bl_circle = createCircle(selectedColor);
+            } else {
+                bl_circle = createCircle(defaultColor);
+            }
 
-        if (bl_circle.y >= 50 && bl_circle.y <= 990 && bl_circle.x < 1856) {
-            circles.push(bl_circle);
-        }
+            if (bl_circle.y >= 50 && bl_circle.y <= 990 && bl_circle.x < 1856) {
+                circles.push(bl_circle);
+            }
 
-    }, timer);
+        }, timer);
+    }
 
 
     function isColor(input) {
@@ -484,17 +495,19 @@ $(document).ready(function () {
             /* x: Math.floor(Math.random() * (1856 - 0) + 0),
              y: Math.floor(Math.random() + 990),*/
             x: Math.floor(Math.random() * 1856),
-            y: Math.floor(Math.random() * (1856 - 50) + 50),
+            y: Math.floor(Math.random() * (1010 - 50) + 50),
             color: color
         };
     }
 
     function move() {
         setInterval(function () {
-            ctx.clearRect(0, 0, 1856, 991)
+            var c = document.getElementById("cnv_main")
+            var ctx = c.getContext("2d");
+            ctx.clearRect(0, 0, 1856, 1040)
             circles.forEach(function (element) {
                 element.x = element.x + (Math.random() + -(Math.random()));
-                element.y = element.y + (Math.random() + -(Math.random() + 0.11));
+                element.y = element.y + (Math.random() + -(Math.random() + 0.16));
                 if (element.y <= 50) {
                     element.color = 'black';
                 }

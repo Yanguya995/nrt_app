@@ -1,132 +1,166 @@
- 
  @-webkit-keyframes msize {
-     0%{-webkit-transform: translateX(-100px);
-        -webkit-transition: left 10% 5s;        
-    };
-     50%{-webkit-transform:translateX(-200px);
-        -webkit-transition: left 50% 5s;
-    };
-     100%{-webkit-transform:translateX(-300px);
-        -webkit-transition: left 100% 5s;
-    };     
+     0% {
+         -webkit-transform: translateX(-250px);
+         -webkit-transition: left 10% 5s;
+     }
+     ;
+     50% {
+         -webkit-transform: translateX(-350px);
+         -webkit-transition: left 50% 5s;
+     }
+     ;
+     100% {
+         -webkit-transform: translateX(-450px);
+         -webkit-transition: left 100% 5s;
+     }
+     ;
  }
- 
- @-moz-keyframes msize{
-    0%{-moz-transform: translateX(-100px);
-        -moz-transition: left 10% 5s;        
-    };
-     50%{-moz-transform:translateX(-200px);
-        -moz-transition: left 50% 5s;
-    };
-     100%{-moz-transform:translateX(-300px);
-        -moz-transition: left 100% 5s;
-    };     
+
+ @-moz-keyframes msize {
+     0% {
+         -moz-transform: translateX(-250px);
+         -moz-transition: left 10% 5s;
+     }
+     ;
+     50% {
+         -moz-transform: translateX(-350px);
+         -moz-transition: left 50% 5s;
+     }
+     ;
+     100% {
+         -moz-transform: translateX(-450px);
+         -moz-transition: left 100% 5s;
+     }
+     ;
  }
 
  @keyframes msize {
-    0%{transform: translateX(-300px);
-        transition: left 10% 5s;        
-    };
-     50%{transform:translateX(-400px);
-        transition: left 50% 5s;
-    };
-     100%{transform:translateX(-500px);
-        transition: left 100% 5s;
-    };
-}
+     0% {
+         transform: translateX(-250px);
+         transition: left 10% 5s;
+     }
+     ;
+     50% {
+         transform: translateX(-350px);
+         transition: left 50% 5s;
+     }
+     ;
+     100% {
+         transform: translateX(-450px);
+         transition: left 100% 5s;
+     }
+     ;
+ }
 
-input::-webkit-input-placeholder {
-    color:white !important;
-    }
-     
-    input:-moz-placeholder { /* Firefox 18- */
-        color:white !important;
-    }
-     
-    input::-moz-placeholder {  /* Firefox 19+ */
-        color:white !important;
-    }
-     
-    input:-ms-input-placeholder {  
-    color:white !important;  
-    }
+ input::-webkit-input-placeholder {
+     color: white !important;
+ }
 
-.colorInput {
-    width:40%; 
-    font-size:350%; 
-    height:300px;
-    position:absolute; 
-    text-align: center;
-    color:white;
-    top:25%; left:30%;
-    border-radius: 200px;
-    border:solid blue 1px;
-    -webkit-transition: width 3s;
-    transition: width 3s;
-    animation-name: msize;
-    animation-duration: 3s;
-    background-color: gray;
-    opacity: 0.3;
+ input:-moz-placeholder {
+     /* Firefox 18- */
+     color: white !important;
+ }
+
+ input::-moz-placeholder {
+     /* Firefox 19+ */
+     color: white !important;
+ }
+
+ input:-ms-input-placeholder {
+     color: white !important;
+ }
+
+ .colorInput {
+     width: 40%;
+     font-size: 350%;
+     height: 320px;
+     position: absolute;
+     text-align: center;
+     color: white;
+     top: 45%;
+     left: 33%;
+     border-radius: 200px;
+     border: solid blue 1px;
+     -webkit-transition: width 3s;
+     transition: width 3s;
+     animation-name: msize;
+     animation-duration: 3s;
+     background-color: gray;
+     opacity: 0.3;
  }
 
  .colorInputBeforeClick {
-    width:18%; 
-    font-size:150%; 
-    height:300px; 
-    position:absolute; 
-    top:25%; left:40%;
-    border-radius: 200px;
-    border:solid blue 1px;
-    background-color: gray;
-    opacity: 0.3;
-    color:white;
+     width: 18%;
+     font-size: 150%;
+     height: 320px;
+     position: absolute;
+     top: 45%;
+     left: 40%;
+     border-radius: 200px;
+     border: solid blue 1px;
+     background-color: gray;
+     opacity: 0.3;
+     color: white;
+     font-size: 175%;
+     text-align: center;
  }
 
- body{
-     background-color:white;
+ body {
+     background-color: white;
  }
 
- .imgV{
-    margin-left: 0px; 
-    margin-bottom:0px;
+ .imgV {
+     margin-left: 0px;
+     margin-bottom: 0px;
  }
- .logoDiv{
-    display:inline-block; 
-    margin-left:0px;
+
+ .logoDiv {
+     display: inline-block;
+     margin-left: 0px;
  }
 
  .backGroundDiv {
-    position:absolute; 
-    top:0%; left: 0%; 
-    background-color: black; 
-    width:100%; 
-    height: 100%;
- }
- 
- .horizontalLineDiv{
-    width:111.2%; 
-    margin-left:-10px; 
-    height:2px; 
-    margin-top: 5px;
-    background-color:red;
- }
- .verticalLineDiv {
-    position:absolute; 
-    border-left: 2px solid red; 
-    height:100%; 
-    left: 160px; 
-    top:0px;
+     position: absolute;
+     top: 0%;
+     left: 0%;
+     background-color: black;
+     width: 100%;
+     height: 100%;
  }
 
- .mainCanvasDiv{
-    position:absolute; 
-    left: 167px;  
-    width:91%; 
-    height:765px; 
-    top: 220px
+ .horizontalLineDiv {
+     width: 111%;
+     margin-left: -10px;
+     height: 2px;
+     margin-top: 5px;
+     background-color: red;
  }
- .mainCanvas{
-    position: absolute; 
-    left:-10%; top:-30%; 
-    background-color:crimson; opacity:0.5
+
+ .verticalLineDiv {
+     position: absolute;
+     border-left: 2px solid red;
+     height: 100%;
+     left: 160px;
+     top: 0px;
+ }
+
+ .mainCanvasDiv {
+     position: absolute;
+     left: 0%;
+     width: 1%;
+     height: 7%;
+     top: 0%;
+ }
+
+ .mainCanvas {
+     position: absolute;
+     left: -10%;
+     top: -30%;
+     background-color: crimson;
+     opacity: 0.5
+ }
+
+ a {
+     text-decoration: none;
+     color: black;
  }
