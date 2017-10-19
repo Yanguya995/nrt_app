@@ -1,1 +1,99 @@
-var _0xab35=['\x23\x63\x6e\x76\x5f\x6d\x61\x69\x6e','\x6c\x6f\x61\x64','\x61\x74\x74\x72','\x73\x74\x79\x6c\x65','\x62\x61\x63\x6b\x67\x72\x6f\x75\x6e\x64\x2d\x63\x6f\x6c\x6f\x72\x3a','\x3b\x20\x6f\x70\x61\x63\x69\x74\x79\x3a\x20\x30\x2e\x33','\x63\x6f\x6c\x6f\x72\x49\x6e\x70\x75\x74','\x70\x6c\x61\x63\x65\x68\x6f\x6c\x64\x65\x72','\x45\x6e\x74\x65\x72\x20\x43\x6f\x6c\x6f\x75\x72','\x74\x6f\x4c\x6f\x63\x61\x6c\x65\x4c\x6f\x77\x65\x72\x43\x61\x73\x65','\x6e\x61\x6d\x65','\x63\x6f\x64\x65','\x72\x61\x6e\x64\x6f\x6d','\x66\x6c\x6f\x6f\x72','\x63\x6c\x65\x61\x72\x52\x65\x63\x74','\x66\x6f\x72\x45\x61\x63\x68','\x63\x6f\x6c\x6f\x72','\x62\x6c\x61\x63\x6b','\x73\x68\x69\x66\x74','\x67\x65\x74\x43\x6f\x6e\x74\x65\x78\x74','\x62\x65\x67\x69\x6e\x50\x61\x74\x68','\x61\x72\x63','\x73\x74\x72\x6f\x6b\x65','\x74\x72\x61\x6e\x73\x70\x61\x72\x65\x6e\x74','\x66\x69\x6c\x6c','\x72\x65\x61\x64\x79','\x62\x6c\x75\x65'];(function(_0x4fd37c,_0x458884){var _0x320cec=function(_0x3610a0){while(--_0x3610a0){_0x4fd37c['\x70\x75\x73\x68'](_0x4fd37c['\x73\x68\x69\x66\x74']());}};_0x320cec(++_0x458884);}(_0xab35,0x1e4));var _0x5ab3=function(_0xb42224,_0x4edb12){_0xb42224=_0xb42224-0x0;var _0x2a3550=_0xab35[_0xb42224];return _0x2a3550;};$(document)[_0x5ab3('0x0')](function(){var _0x2d1694=[];var _0x374767=_0x5ab3('0x1');var _0xdd3c20=0xa;var _0x27bbad='';var _0x152601='';$(_0x5ab3('0x2'))['\x6f\x6e'](_0x5ab3('0x3'),_0x255369());function _0x255369(){$('\x23\x74\x78\x74\x5f\x63\x6f\x6c\x6f\x72')['\x6f\x6e']('\x69\x6e\x70\x75\x74',function(_0x28f63f){_0x152601=$(this)['\x76\x61\x6c']();_0x5085be(_0x152601);$(this)[_0x5ab3('0x4')](_0x5ab3('0x5'),_0x5ab3('0x6')+_0x27bbad+_0x5ab3('0x7'));});$('\x23\x74\x78\x74\x5f\x63\x6f\x6c\x6f\x72')['\x6f\x6e']('\x63\x6c\x69\x63\x6b',function(){$(this)[_0x5ab3('0x4')]('\x63\x6c\x61\x73\x73',_0x5ab3('0x8'))[_0x5ab3('0x4')](_0x5ab3('0x9'),_0x5ab3('0xa'));});_0x2cfc4c();setInterval(function(){var _0x2c38eb;if(_0x27bbad!=''){_0x2c38eb=_0x5734be(_0x27bbad);}else{_0x2c38eb=_0x5734be(_0x374767);}if(_0x2c38eb['\x79']>=0x32&&_0x2c38eb['\x79']<=0x3de&&_0x2c38eb['\x78']<0x740){_0x2d1694['\x70\x75\x73\x68'](_0x2c38eb);}},_0xdd3c20);}function _0x5085be(_0x2a4e16){for(item in colours){if(_0x2a4e16[_0x5ab3('0xb')]()==colours[item][_0x5ab3('0xc')][_0x5ab3('0xb')]()){debugger;_0x27bbad='\x23'+colours[item][_0x5ab3('0xd')]['\x74\x6f\x4c\x6f\x63\x61\x6c\x65\x4c\x6f\x77\x65\x72\x43\x61\x73\x65']();break;}}}function _0x325aa1(_0x3493f1,_0x59eb26){return color={'\x6e\x61\x6d\x65':_0x3493f1,'\x63\x6f\x64\x65':_0x59eb26};}function _0x5734be(_0xbc16b9){return circle={'\x72':Math[_0x5ab3('0xe')]()*0x18,'\x78':Math[_0x5ab3('0xf')](Math[_0x5ab3('0xe')]()*0x740),'\x79':Math[_0x5ab3('0xf')](Math[_0x5ab3('0xe')]()*(0x3f2-0x32)+0x32),'\x63\x6f\x6c\x6f\x72':_0xbc16b9};}function _0x2cfc4c(){setInterval(function(){var _0x47ed91=document['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64']('\x63\x6e\x76\x5f\x6d\x61\x69\x6e');var _0xb3f960=_0x47ed91['\x67\x65\x74\x43\x6f\x6e\x74\x65\x78\x74']('\x32\x64');_0xb3f960[_0x5ab3('0x10')](0x0,0x0,0x740,0x410);_0x2d1694[_0x5ab3('0x11')](function(_0x4f2856){_0x4f2856['\x78']=_0x4f2856['\x78']+(Math['\x72\x61\x6e\x64\x6f\x6d']()+-Math[_0x5ab3('0xe')]());_0x4f2856['\x79']=_0x4f2856['\x79']+(Math['\x72\x61\x6e\x64\x6f\x6d']()+-(Math[_0x5ab3('0xe')]()+0.16));if(_0x4f2856['\x79']<=0x32){_0x4f2856[_0x5ab3('0x12')]=_0x5ab3('0x13');}_0x16e165(_0x4f2856);if(_0x2d1694['\x6c\x65\x6e\x67\x74\x68']>=0x7d0){_0x2d1694[_0x5ab3('0x14')]();}},this);},function(){},_0xdd3c20*0.01);}function _0x16e165(_0xfd85a4){var _0x3a6b1c=document['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64']('\x63\x6e\x76\x5f\x6d\x61\x69\x6e');var _0xaddb7f=_0x3a6b1c[_0x5ab3('0x15')]('\x32\x64');_0xaddb7f[_0x5ab3('0x16')]();_0xaddb7f[_0x5ab3('0x17')](_0xfd85a4['\x78'],_0xfd85a4['\x79'],_0xfd85a4['\x72'],0x0,0x2*Math['\x50\x49']);_0xaddb7f[_0x5ab3('0x18')]();_0xaddb7f['\x66\x69\x6c\x6c\x53\x74\x79\x6c\x65']=_0xfd85a4[_0x5ab3('0x12')];_0xaddb7f['\x73\x74\x72\x6f\x6b\x65\x53\x74\x79\x6c\x65']=_0x5ab3('0x19');_0xaddb7f[_0x5ab3('0x1a')]();}});
+$(document).ready(function () {
+    var circles = [];
+    var defaultColor = 'blue';
+    var timer = 10;
+    var selectedColor = '';
+    var input = '';
+
+    $('#cnv_main').on('load', main());
+
+    function main() {
+        $('#txt_color').on('input', function (e) {
+            input = $(this).val();
+            isColor(input);
+            $(this).attr('style', 'background-color:' + selectedColor + '; opacity: 0.3');
+        });
+
+        $("#txt_color").on('click', function () {
+            $(this)
+            .attr("class", "colorInput")
+            .attr("placeholder", "Enter Colour");
+        });
+
+        move();
+        setInterval(function () {
+            var bl_circle
+            if (selectedColor != '') {
+                bl_circle = createCircle(selectedColor);
+            } else {
+                bl_circle = createCircle(defaultColor);
+            }
+
+            if (bl_circle.y >= 50 && bl_circle.y <= 990 && bl_circle.x < 1856) {
+                circles.push(bl_circle);
+            }
+
+        }, timer);
+    }
+
+
+    function isColor(input) {
+        for (item in colours) {
+            if (input.toLocaleLowerCase() == colours[item].name.toLocaleLowerCase()) {
+                debugger;
+                selectedColor = '#' + colours[item].code.toLocaleLowerCase()
+                break;
+            }
+        }
+    }
+
+    function createColor(_name, _code) {
+        return color = {
+            name: _name,
+            code: _code
+        }
+    }
+
+    function createCircle(color) {
+        return circle = {
+            r: Math.random() * 24,
+            /* x: Math.floor(Math.random() * (1856 - 0) + 0),
+             y: Math.floor(Math.random() + 990),*/
+            x: Math.floor(Math.random() * 1856),
+            y: Math.floor(Math.random() * (1010 - 50) + 50),
+            color: color
+        };
+    }
+
+    function move() {
+        setInterval(function () {
+            var c = document.getElementById("cnv_main")
+            var ctx = c.getContext("2d");
+            ctx.clearRect(0, 0, 1856, 1040)
+            circles.forEach(function (element) {
+                element.x = element.x + (Math.random() + -(Math.random()));
+                element.y = element.y + (Math.random() + -(Math.random() + 0.16));
+                if (element.y <= 50) {
+                    element.color = 'black';
+                }
+                draw(element);
+                if (circles.length >= 2000) {
+                    circles.shift();
+                }
+            }, this);
+        }, function () {
+
+        }, timer * 0.01)
+    }
+
+    function draw(circle) {
+        var c = document.getElementById("cnv_main")
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(circle.x, circle.y, circle.r, 0, 2 * Math.PI);
+        ctx.stroke();
+        ctx.fillStyle = circle.color;
+        ctx.strokeStyle = "transparent";
+        ctx.fill();
+    }
+});
