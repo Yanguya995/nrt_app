@@ -53,62 +53,55 @@
  }
 
  input::-webkit-input-placeholder {
-     color: white !important;
+     color:black !important;
  }
 
  input:-moz-placeholder {
      /* Firefox 18- */
-     color: white !important;
+     color:black !important;
  }
 
  input::-moz-placeholder {
      /* Firefox 19+ */
-     color: white !important;
+     color: black !important;
  }
 
  input:-ms-input-placeholder {
-     color: white !important;
+     color: black !important;
  }
 
  .colorInput {
      width: 40%;
-     font-size: 350%;
+     font-size: 600%;
      height: 320px;
      position: absolute;
      text-align: center;
-     color: white;
-     top: 45%;
+     color:black;
+     top: 65%;
      left: 33%;
      border-radius: 200px;
-     border: solid blue 1px;
+     border: solid gray 5px;
      -webkit-transition: width 3s;
      transition: width 3s;
      animation-name: msize;
      animation-duration: 3s;
-     background-color: gray;
-     opacity: 0.3;
+     opacity: 0.5;
  }
 
  .colorInputBeforeClick {
      width: 18%;
-     font-size: 150%;
+     color:black;
+     font-size: 250%;
      height: 320px;
      position: absolute;
      top: 45%;
-     left: 40%;
+     left: 45%;
      border-radius: 200px;
-     border: solid blue 1px;
-     background-color: gray;
+     border: solid gray 5px;
      opacity: 0.3;
-     color: white;
-     font-size: 175%;
+     font-size: 400%;
      text-align: center;
  }
-
- body {
-     background-color: white;
- }
-
  .imgV {
      margin-left: 0px;
      margin-bottom: 0px;
@@ -117,15 +110,6 @@
  .logoDiv {
      display: inline-block;
      margin-left: 0px;
- }
-
- .backGroundDiv {
-     position: absolute;
-     top: 0%;
-     left: 0%;
-     background-color: black;
-     width: 100%;
-     height: 100%;
  }
 
  .horizontalLineDiv {
@@ -156,8 +140,6 @@
      position: absolute;
      left: -10%;
      top: -30%;
-     background-color: crimson;
-     opacity: 0.5
  }
 
  a {
