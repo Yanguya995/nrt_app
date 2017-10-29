@@ -5,8 +5,7 @@ $(document).ready(function () {
     var selectedColor = '';
     var input = '';
 
-    $('#cnv_main').on('load', main());
-
+       $('#cnv_main').on('load', main());
     function main() {
         $('#txt_color').on('input', function (e) {
             input = $(this).val();
@@ -16,11 +15,10 @@ $(document).ready(function () {
 
         $("#txt_color").on('click', function () {
             $(this)
-            .attr("class", "colorInput")
-            .attr("placeholder", "Enter Colour");
+                .attr("class", "colorInput")
+                .attr("placeholder", "Enter Colour");
         });
 
-        move();
         setInterval(function () {
             var bl_circle
             if (selectedColor != '') {
@@ -29,18 +27,19 @@ $(document).ready(function () {
                 bl_circle = createCircle(defaultColor);
             }
 
-            if (bl_circle.y >= 50 && bl_circle.y <= 990 && bl_circle.x < 1856) {
+            if (bl_circle.y >= 50 && bl_circle.y <= displayHeight && bl_circle.x < displayWidth) {
                 circles.push(bl_circle);
             }
 
         }, timer);
+        move();
     }
 
 
     function isColor(input) {
+        var index = 0;
         for (item in colours) {
             if (input.toLocaleLowerCase() == colours[item].name.toLocaleLowerCase()) {
-                debugger;
                 selectedColor = '#' + colours[item].code.toLocaleLowerCase()
                 break;
             }
@@ -57,10 +56,8 @@ $(document).ready(function () {
     function createCircle(color) {
         return circle = {
             r: Math.random() * 24,
-            /* x: Math.floor(Math.random() * (1856 - 0) + 0),
-             y: Math.floor(Math.random() + 990),*/
-            x: Math.floor(Math.random() * 1856),
-            y: Math.floor(Math.random() * (1010 - 50) + 50),
+            x: Math.floor(Math.random() * displayWidth),
+            y: Math.floor(Math.random() * displayHeight),
             color: color
         };
     }
@@ -69,10 +66,11 @@ $(document).ready(function () {
         setInterval(function () {
             var c = document.getElementById("cnv_main")
             var ctx = c.getContext("2d");
-            ctx.clearRect(0, 0, 1856, 1040)
+            ctx.clearRect(0, 0, displayWidth, displayHeight)
             circles.forEach(function (element) {
                 element.x = element.x + (Math.random() + -(Math.random()));
                 element.y = element.y + (Math.random() + -(Math.random() + 0.16));
+                
                 if (element.y <= 50) {
                     element.color = 'black';
                 }
