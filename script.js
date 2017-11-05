@@ -4,9 +4,14 @@ $(document).ready(function () {
     var timer = 10;
     var selectedColor = '';
     var input = '';
+    var listSelect = '';
 
-       $('#cnv_main').on('load', main());
+    $('#cnv_main').on('load', main());
+
     function main() {
+        populateSelect();
+        $("#bcgd_select").append(listSelect);
+
         $('#txt_color').on('input', function (e) {
             input = $(this).val();
             isColor(input);
@@ -17,6 +22,12 @@ $(document).ready(function () {
             $(this)
                 .attr("class", "colorInput")
                 .attr("placeholder", "Enter Colour");
+        });
+
+        $("#bcgd_select").on('change', function () {
+            var bgSelection = $(this).val();
+            $("#db_main").attr('style', 'background-color:' + "#" + bgSelection + '');
+            $(this).attr('style', 'backgroun-color:' + "#" + bgSelection + '');
         });
 
         setInterval(function () {
@@ -35,6 +46,11 @@ $(document).ready(function () {
         move();
     }
 
+    function populateSelect() {
+        for (item in colours) {
+            listSelect += "<option value=" + colours[item].code + " >" + colours[item].name + "</option>"
+        }
+    }
 
     function isColor(input) {
         var index = 0;
@@ -55,7 +71,7 @@ $(document).ready(function () {
 
     function createCircle(color) {
         return circle = {
-            r: Math.random() * 24,
+            r: Math.random() * 6,
             x: Math.floor(Math.random() * displayWidth),
             y: Math.floor(Math.random() * displayHeight),
             color: color
@@ -70,12 +86,12 @@ $(document).ready(function () {
             circles.forEach(function (element) {
                 element.x = element.x + (Math.random() + -(Math.random()));
                 element.y = element.y + (Math.random() + -(Math.random() + 0.16));
-                
-                if (element.y <= 50) {
+
+                if (element.y <= 5) {
                     element.color = 'black';
                 }
                 draw(element);
-                if (circles.length >= 2000) {
+                if (circles.length >= 1500) {
                     circles.shift();
                 }
             }, this);

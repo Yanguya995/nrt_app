@@ -2,44 +2,59 @@
 
 <head>
     <title> FunOnWeb </title>
-    <link rel="shortcut icon" href="http://localhost/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles2.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="colours.js"></script>
     <script src="script.js"></script>
-    <script src="script2.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script>
+        var displayHeight = 0;
+        var displayWidth = 0;
+
+        function changeCanvasSize() {
+            var hMax = 0.95;
+            var wMax = 0.999;
+            var canvas = document.getElementById("cnv_main");
+            height = window.innerHeight * hMax;
+            width = window.innerWidth * wMax;
+            displayHeight = height;
+            displayWidth = width;
+            if (width <= 1010) {
+                displayHeight = displayHeight * 0.980;
+            }
+            canvas.setAttribute("width", "" + displayWidth + "px");
+            canvas.setAttribute("height", "" + displayHeight + "px");
+        }
+
+        window.onresize = (() => {
+            changeCanvasSize();
+        });
+    </script>
 </head>
 
-<body onload="changeCanvasSize()" style="width: 98%; height:98%">
-    <div class="horizontalLineDiv"></div>
-
-    <div style="position:absolute; width:98%;">
-        <div class="logoDiv">
-            <img class="imgV" width="148px" src="./1.jpg" />
+<body id="db_main" onload="changeCanvasSize();" style="background-color:black">
+    <div id="wrapper">
+        <div id="myDiv">
+            <canvas id="cnv_main" class="mainCanvas"></canvas>
+            <input type="text" id="txt_color" class="colorInputBeforeClick" placeholder="Click me" />
+            <select id="bcgd_select" class="bgSelect">
+                <option value="000000"> Black </option> 
+            </select>
+            <img alt="logo" src="./top_log.png" class="topLogo" />
+            <div class="mainFooterSpan">
+                <span>
+                    <a style="display: block;" href="mailto:fnonweb@gmail.com"><i class="myicons fa fa-envelope"></i></a>
+                    <a style="display: block;" href="https://www.linkedin.com/company/18306201/" style="margin-left: 30px"><i class=" myicons fa fa-linkedin"></i></a>
+                    <a style="display: block;" href="https://twitter.com/fnonweb" style="margin-left: 30px"><i class="myicons fa fa-twitter"></i></a>
+                    <a style="display: block;" href="https://www.instagram.com/fnonweb/?hl=en" style="margin-left:30px"><i class="myIcons fa fa-instagram"></i></a>
+                </span>
+            </div>
         </div>
     </div>
-    <div class="verticalLineDiv"></div>
-    <div>
-        <div class="mainFooterSpan">
-            <span style="width: 100%">
-                            <a href="mailto:njabulo.thwala@gmail.com"><i class="myicons fa fa-envelope"></i></a>
-                            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" style="margin-left: 30px"><i class=" myicons fa fa-linkedin"></i></a>
-                            <a href="https://stackoverflow.com/users/6486347/yanguya995" style="margin-left: 30px"><i class="myicons fa fa-stack-overflow"></i></a>
-                            </span>
-        </div>
-    </div>
-
-    <div>
-        <canvas id="cnv_main" width="1000%" height="1000%" class="mainCanvas">
-        </canvas>
-
-    </div>
-    <div>
-        <input type="text" id="txt_color" class="colorInputBeforeClick" placeholder="Click me">
-        </div>            
 </body>
-</html>
+</htm>

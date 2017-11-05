@@ -1,37 +1,18 @@
 <html>
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">    
 <head>
-    <title> FunOnWeb </title>
-    <link rel="shortcut icon" href="http://localhost/favicon.ico" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="styles2.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        setTimeout(function () {
+            location.href = "./bubbles.html";
+        }, 8000);
+    </script>
 </head>
 
-<body onload="funk()" id="bd_main" style="width: 98%; height:98%">
-    <div class="horizontalLineDiv"></div>
-
-    <div style="position:absolute; width:98%;">
-        <div class="logoDiv">
-            <img class="imgV" width="148px" src="./1.jpg" />
-        </div>
-    </div>
-    <div class="verticalLineDiv"></div>
-    <div style="height:50%; display:inline-block; left:25%; position:absolute; font-size:250%; text-align:center;color: black; top:30%; width:58%">
-        <h1> Fun on Web</h1>
-        <h5 id="intro_text" style="margin-top: 7%"> Hi my name is Njabulo Richard Thwala and this is Fun on Web </h5>
-        <img width="100px" src="./i.png" />
-    </div>
-
-    <div>
-        <div class="mainFooterSpan">
-            <span style="width: 100%">
-                    <a href="mailto:njabulo.thwala@gmail.com"><i class="myicons fa fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" style="margin-left: 30px"><i class=" myicons fa fa-linkedin"></i></a>
-                    <a href="https://stackoverflow.com/users/6486347/yanguya995" style="margin-left: 30px"><i class="myicons fa fa-stack-overflow"></i></a>
-                    </span>
+<body>
+    <div id="wrapper">
+        <div id="myDiv">
+            <div class="circleBefore"></div>
         </div>
     </div>
 </body>
